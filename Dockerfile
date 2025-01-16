@@ -1,9 +1,11 @@
-FROM python
+FROM python:3.12.3
 
 ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRITEBYTECODE 1
 
 WORKDIR /app
+
+RUN pip install --upgrade pip
 
 COPY . .
 
