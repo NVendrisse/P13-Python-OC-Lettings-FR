@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 RUN pip install -r requirements.txt
-RUN py manage.py collectstatic --noinput
+RUN py manage.py collectstatic
 
 EXPOSE 8000
 
