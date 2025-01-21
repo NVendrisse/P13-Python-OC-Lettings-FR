@@ -13,10 +13,13 @@ jobs:
     steps:
       -
         name: Login to Docker Hub
+        env:
+          LOGIN : ${{ secrets.LOGIN }}
+          PASSWORD : ${{ secrets.TOKEN }}
         uses: docker/login-action@v3
         with:
-          username: ${{ env.LOGIN }}
-          password: ${{ env.TOKEN }}
+          username: LOGIN
+          password: PASSWORD
       -
         name: Checkout
         uses: actions/checkout@v4

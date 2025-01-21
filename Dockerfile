@@ -1,7 +1,6 @@
 # pull official base image
 FROM python:3.11.8
-RUN --mount=type=secret,id=LOGIN,env=LOGIN
-RUN --mount=type=secret,id=TOKEN,env=env
+
 
 # set work directory
 WORKDIR /app
