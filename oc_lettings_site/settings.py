@@ -1,6 +1,7 @@
 import os
 
 from pathlib import Path
+import sentry_sdk
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -117,3 +118,17 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+
+# SENTRY
+sentry_sdk.init(
+    dsn="https://ec17da194b7307e1fad8e6e88c8ed078@o4507448396218368.ingest.de.sentry.io/4508688143417424",
+    # Set traces_sample_rate to 1.0 to capture 100%
+    # of transactions for tracing.
+    traces_sample_rate=1.0,
+    _experiments={
+        # Set continuous_profiling_auto_start to True
+        # to automatically start the profiler on when
+        # possible.
+        "continuous_profiling_auto_start": True,
+    },
+)
