@@ -1,5 +1,5 @@
 # pull official base image
-FROM python:3.11.8
+FROM python:3.12.8
 
 
 # set work directory
