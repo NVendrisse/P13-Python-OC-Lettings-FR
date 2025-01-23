@@ -14,6 +14,10 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v4
+      - uses: actions/docker/login@master
+        with: # Set the secret as an input
+          DOCKER_USERNAME: ${{ secrets.LOGIN }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_TOKEN }}
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v3
