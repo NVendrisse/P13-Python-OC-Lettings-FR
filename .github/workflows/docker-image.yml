@@ -32,5 +32,5 @@ jobs:
         with:
           context: .
           push: True
-          tags: latest
+          tags: nvendrisse/oc-lettings-fr:latest
           
