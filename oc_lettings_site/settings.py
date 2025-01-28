@@ -120,9 +120,10 @@ STATICFILES_DIRS = [
 ]
 
 # SENTRY
-url = "https://ec17da194b7307e1fad8e6e88c8ed078@o4507448396218368.ingest.de.sentry.io/4508688143417424"
+url = "https://ec17da194b7307e1fad8e6e88c8ed078@o4507448396218368.ingest.de.sentry.io/"
+project_id = "4508688143417424"
 sentry_sdk.init(
-    dsn=url,
+    dsn=url + project_id,
     # Set traces_sample_rate to 1.0 to capture 100%
     # of transactions for tracing.
     traces_sample_rate=1.0,
