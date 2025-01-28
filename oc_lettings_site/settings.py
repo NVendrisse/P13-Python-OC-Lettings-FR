@@ -119,7 +119,7 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 
-# SENTRY
+# SENTRY Part
 url = "https://ec17da194b7307e1fad8e6e88c8ed078@o4507448396218368.ingest.de.sentry.io/"
 project_id = "4508688143417424"
 sentry_sdk.init(
