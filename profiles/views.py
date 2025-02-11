@@ -25,6 +25,15 @@ def index(request):
 # it. Nam aliquam dignissim congue.
 # Pellentesque habitant morbi tristique senectus et netus et males
 def profile(request, username):
+    """Get a particular profile
+
+    Arguments:
+        request -- user request
+        username -- username of the requested profile
+
+    Returns:
+        The profile page with information about the requested profile
+    """
     profile = Profile.objects.get(user__username=username)
     context = {"profile": profile}
     return render(request, "profiles/profile.html", context)

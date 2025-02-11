@@ -8,6 +8,14 @@ from lettings.models import Letting
 # Vestibulum ante ipsum primis in faucibus orci
 # luctus et ultrices posuere cubilia curae; Cras eget scelerisque
 def index(request):
+    """Letting index page
+
+    Arguments:
+        request -- user request
+
+    Returns:
+        The index of the lettings page
+    """
     lettings_list = Letting.objects.all()
     context = {"lettings_list": lettings_list}
     return render(request, "lettings/index.html", context)
@@ -27,6 +35,15 @@ def index(request):
 # Mauris condimentum auctor elementum. Donec quis nisi ligula.
 # Integer vehicula tincidunt enim, ac lacinia augue pulvinar sit amet.
 def letting(request, letting_id):
+    """Letting information page
+
+    Arguments:
+        request -- user request
+        letting_id -- ID of the requested letting
+
+    Returns:
+        the letting page with information about the requested letting
+    """
     letting = Letting.objects.get(id=letting_id)
     context = {
         "title": letting.title,

@@ -31,8 +31,13 @@ class Address(models.Model):
 
 
 class Letting(models.Model):
+    """Lettings model
+    inherited from the Model class of django
+    """
+
     title = models.CharField(max_length=256)
     address = models.OneToOneField(Address, on_delete=models.CASCADE)
 
     def __str__(self):
+        """Return the letting title"""
         return self.title
