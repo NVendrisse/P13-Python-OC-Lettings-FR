@@ -6,13 +6,12 @@
 OC-Lettings documentation
 =========================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+This documentation is about understanding how does the API behind the Orange County Website work
 
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   Project description'../description'
+
+   ./description.rst
 
