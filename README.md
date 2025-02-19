@@ -69,6 +69,13 @@ Dans le reste de la documentation sur le développement local, il est supposé q
 - Aller sur `http://localhost:8000/admin`
 - Connectez-vous avec l'utilisateur `admin`, mot de passe `Abc1234!`
 
+#### Déploiement
+
+- Le déploiement a lieu automatiquement a chaque push de la branche master
+- Le déploiement n'a lieu que si les tests sont validés a hauteur de 80%
+- Il est optimisé pour fonctionner sous un maximum d'environement
+- La connection a Docker se fait grace a des identifiant stocké sur le dépot github
+
 ### Windows
 
 Utilisation de PowerShell, comme ci-dessus sauf :
