@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-OC-Lettings documentation
+Documentation OC-Lettings
 =========================
 
-This documentation is about understanding how does the API behind the Orange County Website work
+Cette documentation a pour but de présenter les concepts de programmation de l'API derrière le site d'Orange County Holydays Home
 
 
 .. toctree::

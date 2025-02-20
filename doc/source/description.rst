@@ -1,7 +1,10 @@
-Project description
-===================
+Description du projet
+=====================
 
-This project is about setting a website for Orange county letting
-It show every profile and letting registered to any user
+Ce projet a pour but la modification de l'architecture de l'API, l'utilisation de deux applications distinctes
+permettra dans le futur d'apporter des améliorations au programme de manière plus fluide et plus organisée
 
-It is develloped using the django framework
+Ainsi le projet se trouve actuellement dans un écosystème plus robuste et plus maintenable
+
+Les modifications apportées n'ont cependant pas mis en péril la structure de la base de données
+ce qui évite une éventuelle perte de données
