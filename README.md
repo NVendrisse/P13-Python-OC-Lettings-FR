@@ -2,6 +2,11 @@
 
 Site web d'Orange County Lettings
 
+## Documentation
+
+la documentation est disponible sur read the docs
+https://python-oc-lettings-fr-vendrisse.readthedocs.io/en/latest/index.html
+
 ## Développement local
 
 ### Prérequis
