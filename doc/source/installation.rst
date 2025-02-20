@@ -14,18 +14,18 @@ Installer les modules nécessaires
 
 **Windows**
 
-``cd ..\P13-Python-OC-Lettings-FR
-python -m venv env
-.\env\Scripts\activate
-pip install -r requirements.txt
-``
+``cd ..\P13-Python-OC-Lettings-FR``
+``python -m venv env``
+``.\env\Scripts\activate``
+``pip install -r requirements.txt``
+
 **OSx et Linux**
 
-``cd ..\P13-Python-OC-Lettings-FR
-python -m venv env
-env/bin/activate
-pip install -r requirements.txt
-``
+``cd ..\P13-Python-OC-Lettings-FR``
+``python -m venv env``
+``env/bin/activate``
+``pip install -r requirements.txt``
+
 
 Disclaimer sur les modifications
 --------------------------------
