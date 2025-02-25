@@ -4,13 +4,10 @@ Les technologies derrière l'API
 Language de programmation
 -------------------------
 
-Cette API est dévellopée en python, ce language est un language de programmation interprété:
-* Multiplatforme
-* Multiparadigme
-
+Cette API est dévellopée en python, ce language est un language de programmation interprété
 Pour plus d'information sur le language veuillez aller sur ce `site <https://www.python.org>`_
 
-Framework de dévellopement
+Framework de développement
 --------------------------
 
 Pour le dévellopement de l'API a été utilisé le framework Django,
@@ -34,13 +31,13 @@ que l'intégralité de notre code est propre
 
 **CI/CD**
 
-Afin d'obtenir une application disponible a tous, en ligne le dévellopement d'un pipeline CI/CD
+Afin d'obtenir une application disponible a tous, en ligne le développement d'un pipeline CI/CD
 a été nécessaire
 Pour cela l'utilisation de github action a été privilégiée
-Cela permet de lancer un script d'intégration a chaque push sur la branche master de créer une image Docker
-et enfin de déclencher le déploiement
+Cela permet de lancer un script d'intégration a chaque push sur la branche master de créer une image `Docker <https://www.docker.com/get-started/>`_
+et enfin de déclencher le déploiement sur Render
 Vous pouvez trouver plus d'information dans la section déploiement de cette documentation
 
 **Enregistrement des erreurs**
 
-Pour assurer une maintenabilité du code, chaque erreur qui serai non gérée est stockée sur Sentry
+Pour assurer une maintenabilité du code, chaque erreur qui serai non gérée est stockée sur Sentry ce qui permet un suivi correct de toute anomalie sur l'application
